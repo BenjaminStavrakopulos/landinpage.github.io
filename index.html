@@ -12,7 +12,7 @@
   <!-- Barra de contacto arriba -->
   <div class="barra-superior">
     <p>
-      Teléfono: +56 9 140 7876 &nbsp;&nbsp;
+      Teléfono: +569 91407876 &nbsp;&nbsp;
       Correo: ruben.escobar.ie@gmail.com &nbsp;&nbsp;
       Dirección: Viña del Mar - Valparaíso
     </p>
@@ -27,7 +27,9 @@
         <p class="subtitulo">SERVICIOS DE INGENIERIA ELÉCTRICA</p>
       </div>
     </div>
-    <nav class="menu-navegacion">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu-navegacion" id="menuNavegacion">
       <a href="#presentacion">PRESENTACIÓN</a>
       <a href="#servicios">SERVICIOS</a>
       <a href="#experiencia">EXPERIENCIA</a>
@@ -52,7 +54,7 @@
 
 
 
-  <section class="presentacion"id="presentacion">
+  <section class="presentacion" id="presentacion">
     <div class="titulo-presentacion">PRESENTACIÓN</div>
 
     <div class="contenedor-acerca">
@@ -61,7 +63,10 @@
       </div>
       <div class="texto-acerca">
         <p><strong>➤ ACERCA DE</strong><br />
-          Ingeniero Eléctrico y Civil Industrial con más de 20 años de experiencia liderando y ejecutando proyectos en media y baja tensión en entornos industriales, comerciales, agroindustriales y de edificación. Enfocado en la eficiencia energética, seguridad eléctrica y cumplimiento normativo. Destaca por su liderazgo técnico, capacidad de gestión de equipos multidisciplinarios y orientación a la mejora continua.
+          Ingeniero Eléctrico y Civil Industrial con más de 20 años de experiencia liderando y ejecutando proyectos en
+          media y baja tensión en entornos industriales, comerciales, agroindustriales y de edificación. Enfocado en la
+          eficiencia energética, seguridad eléctrica y cumplimiento normativo. Destaca por su liderazgo técnico,
+          capacidad de gestión de equipos multidisciplinarios y orientación a la mejora continua.
 
         </p>
         <p>
@@ -77,7 +82,7 @@
   <section class="servicios">
     <div class="titulo-servicios">SERVICIOS</div>
 
-    <div class="contenido-servicios"id="servicios">
+    <div class="contenido-servicios" id="servicios">
       <p><strong>➤ DESARROLLO DE INGENIERÍAS</strong><br />
         Desarrollo de proyectos en las especialidades de electricidad y protección contra incendios, en los cuales se
         desarrollan las ingenierías a nivel conceptual, básica y de detalles, tanto en CAD como en REVIT, en las
@@ -129,22 +134,22 @@
       <img src="./imag/imgservicio5.png" alt="Certificado TE1" />
     </div>
   </section>
-<div class="collapsible-section experiencia-profesional" id="experiencia">
-  <div class="collapsible-header" onclick="toggleSection('experiencia-contenido')">
-  <h3>EXPERIENCIA PROFESIONAL</h3>
-  </div>
-</div>
   <div class="collapsible-section experiencia-profesional" id="experiencia">
-  <div class="collapsible-header" onclick="toggleSection('experiencia-contenido')">
-
-    <h3>➤ PROYECTOS INDUSTRIALES</h3>
-    <span class="icon" id="icon-experiencia">+</span>
+    <div class="collapsible-header" onclick="toggleSection('experiencia-contenido')">
+      <h3>EXPERIENCIA PROFESIONAL</h3>
+    </div>
   </div>
+  <div class="collapsible-section experiencia-profesional" id="experiencia">
+    <div class="collapsible-header" onclick="toggleSection('experiencia-contenido')">
 
-  <div id="experiencia-contenido" class="collapsible-content experiencia-contenido" style="display: none;">
+      <h3>➤ PROYECTOS INDUSTRIALES</h3>
+      <span class="icon" id="icon-experiencia">+</span>
+    </div>
 
-  <div class="experiencia">
-        
+    <div id="experiencia-contenido" class="collapsible-content experiencia-contenido" style="display: none;">
+
+      <div class="experiencia">
+
         <div class="empresa">
           <img src="./imag/logo1.jpg" alt="Logo AquaChile" class="logo-empresa" />
           <div class="datos-empresa">
@@ -300,148 +305,166 @@
     </div>
   </div>
 
-<div class="collapsible-section experiencia-retail">
-  <div class="collapsible-header" onclick="toggleSection('retail')">
-    <h3>➤ PROYECTOS EDIFICACIÓN Y RETAIL</h3>
-    <span class="icon" id="icon-retail">+</span>
-  </div>
+  <div class="collapsible-section experiencia-retail">
+    <div class="collapsible-header" onclick="toggleSection('retail')">
+      <h3>➤ PROYECTOS EDIFICACIÓN Y RETAIL</h3>
+      <span class="icon" id="icon-retail">+</span>
+    </div>
 
-  <div id="retail" class="collapsible-content" style="display: none;">
-    <div class="experiencia">
+    <div id="retail" class="collapsible-content" style="display: none;">
+      <div class="experiencia">
 
-      <div class="empresa">
-        <img src="./imag/log1.png" alt="Logo Mall Plaza" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>Mall Plaza</strong></p>
-          <div class="proyecto">Inspección Técnica de Obras Proyecto Mall Plaza Los Dominicos, Las Condes<br />
-            Año 2016-2017, Potencia Instalada 16,5MVA</div>
-          <div class="proyecto">Proyecto Eléctrico y Corrientes Débiles, Reconversión Paris Mall Plaza Oeste, Cerrillos<br />
-            Año 2024, Potencia Instalada 1MVA</div>
+        <div class="empresa">
+          <img src="./imag/log1.png" alt="Logo Mall Plaza" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>Mall Plaza</strong></p>
+            <div class="proyecto">Inspección Técnica de Obras Proyecto Mall Plaza Los Dominicos, Las Condes<br />
+              Año 2016-2017, Potencia Instalada 16,5MVA</div>
+            <div class="proyecto">Proyecto Eléctrico y Corrientes Débiles, Reconversión Paris Mall Plaza Oeste,
+              Cerrillos<br />
+              Año 2024, Potencia Instalada 1MVA</div>
+          </div>
         </div>
-      </div>
 
-      <div class="empresa">
-        <img src="./imag/log2.png" alt="Logo Incosa" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>INCOSA</strong></p>
-          <div class="proyecto">Proyecto Eléctrico y Corrientes Débiles Centro Comercial Linares<br />
-            Año 2023-2024, Potencia Instalada 2,5MVA</div>
+        <div class="empresa">
+          <img src="./imag/log2.png" alt="Logo Incosa" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>INCOSA</strong></p>
+            <div class="proyecto">Proyecto Eléctrico y Corrientes Débiles Centro Comercial Linares<br />
+              Año 2023-2024, Potencia Instalada 2,5MVA</div>
+          </div>
         </div>
-      </div>
 
-      <div class="empresa">
-        <img src="./imag/log3.png" alt="Logo Koyam" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>KOYAM INMOBILIARIA</strong></p>
-          <div class="proyecto">Proyecto Sistema Protección Contra Incendio Cumbres del Maipo, Puente Alto<br />
-            Año 2022</div>
-          <div class="proyecto">Proyecto Eléctrico, Corrientes Débiles, Telecomunicaciones Ed. Alameda 2B, Rancagua<br />
-            Año 2022</div>
-          <div class="proyecto">Proyecto Telecomunicaciones Brisas de la Florida, La Florida, Región Metropolitana<br />
-            Año 2022</div>
+        <div class="empresa">
+          <img src="./imag/log3.png" alt="Logo Koyam" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>KOYAM INMOBILIARIA</strong></p>
+            <div class="proyecto">Proyecto Sistema Protección Contra Incendio Cumbres del Maipo, Puente Alto<br />
+              Año 2022</div>
+            <div class="proyecto">Proyecto Eléctrico, Corrientes Débiles, Telecomunicaciones Ed. Alameda 2B,
+              Rancagua<br />
+              Año 2022</div>
+            <div class="proyecto">Proyecto Telecomunicaciones Brisas de la Florida, La Florida, Región
+              Metropolitana<br />
+              Año 2022</div>
+          </div>
         </div>
-      </div>
 
-      <div class="empresa">
-        <img src="./imag/log4.jpg" alt="Logo Integra" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>FUNDACIÓN EDUCACIONAL PARA EL DESARROLLO INTEGRAL DE LA NIÑEZ</strong></p>
-          <div class="proyecto">Proyecto Eléctrico y Corrientes Débiles Jardines Infantiles y Sala Cuna, región de Valparaíso, O'Higgins, Areca y Parinacota, Antofagasta<br />
-            Año 2022 - 2024, Potencia Instalada 400kW</div>
+        <div class="empresa">
+          <img src="./imag/log4.jpg" alt="Logo Integra" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>FUNDACIÓN EDUCACIONAL PARA EL DESARROLLO INTEGRAL DE LA NIÑEZ</strong></p>
+            <div class="proyecto">Proyecto Eléctrico y Corrientes Débiles Jardines Infantiles y Sala Cuna, región de
+              Valparaíso, O'Higgins, Areca y Parinacota, Antofagasta<br />
+              Año 2022 - 2024, Potencia Instalada 400kW</div>
+          </div>
         </div>
-      </div>
 
-      <div class="empresa">
-        <img src="./imag/log5.png" alt="Logo Vinci Astaldi" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>Cliente Vinci &amp; <span style="color: #002766;">Astaldi</span> Ingeniería y Construcción</strong></p>
-          <div class="proyecto">Asesoría, Seguimiento de Diseño y Control de la Ejecución Proyecto Eléctrico Ampliación y Mejoramiento del Aeropuerto Arturo Merino Benítez, Santiago<br />
-            Año 2017</div>
+        <div class="empresa">
+          <img src="./imag/log5.png" alt="Logo Vinci Astaldi" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>Cliente Vinci &amp; <span style="color: #002766;">Astaldi</span> Ingeniería y
+                Construcción</strong></p>
+            <div class="proyecto">Asesoría, Seguimiento de Diseño y Control de la Ejecución Proyecto Eléctrico
+              Ampliación y Mejoramiento del Aeropuerto Arturo Merino Benítez, Santiago<br />
+              Año 2017</div>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
 
-<div class="collapsible-section experiencia-agro">
-  <div class="collapsible-header" onclick="toggleSection('agro')">
-    <h3>➤ PROYECTOS AGROINDUSTRIALES</h3>
-    <span class="icon" id="icon-agro">+</span>
-  </div>
+  <div class="collapsible-section experiencia-agro">
+    <div class="collapsible-header" onclick="toggleSection('agro')">
+      <h3>➤ PROYECTOS AGROINDUSTRIALES</h3>
+      <span class="icon" id="icon-agro">+</span>
+    </div>
 
-  <div id="agro" class="collapsible-content" style="display: none;">
-    <div class="experiencia">
+    <div id="agro" class="collapsible-content" style="display: none;">
+      <div class="experiencia">
 
-      <div class="empresa">
-        <img src="./imag/log6.jpg" alt="Logo Agrosuper" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>AGROSUPER S.A</strong></p>
-          <div class="proyecto">Proyectos Eléctricos y Control de Planta de tratamiento, Biodigestores, Grupos de Maternidades y Reproductores de Aves y Cerdos, Sexta Región<br />
-            Año 2018-2025</div>
-          <div class="proyecto">Proyecto Eléctrico y Control Edificios Tratamiento Purines, <a href="#">Biocorneche</a><br />
-            Año 2024, Potencia Instalada 500kW</div>
+        <div class="empresa">
+          <img src="./imag/log6.jpg" alt="Logo Agrosuper" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>AGROSUPER S.A</strong></p>
+            <div class="proyecto">Proyectos Eléctricos y Control de Planta de tratamiento, Biodigestores, Grupos de
+              Maternidades y Reproductores de Aves y Cerdos, Sexta Región<br />
+              Año 2018-2025</div>
+            <div class="proyecto">Proyecto Eléctrico y Control Edificios Tratamiento Purines, <a
+                href="#">Biocorneche</a><br />
+              Año 2024, Potencia Instalada 500kW</div>
+          </div>
         </div>
-      </div>
 
-      <div class="empresa">
-        <img src="./imag/log7.png" alt="Logo Maxagro" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>MAXAGRO</strong></p>
-          <div class="proyecto">Proyecto Eléctrico y Control Biodigestor Rucapequén<br />
-            Año 2019, potencia Instalada 1,5MW</div>
-          <div class="proyecto">Proyectos Eléctrico y Control de Grupos Maternidad, Reproductores de Cerdos<br />
-            Año 2018-2023, Potencia Instalada 500kW</div>
+        <div class="empresa">
+          <img src="./imag/log7.png" alt="Logo Maxagro" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>MAXAGRO</strong></p>
+            <div class="proyecto">Proyecto Eléctrico y Control Biodigestor Rucapequén<br />
+              Año 2019, potencia Instalada 1,5MW</div>
+            <div class="proyecto">Proyectos Eléctrico y Control de Grupos Maternidad, Reproductores de Cerdos<br />
+              Año 2018-2023, Potencia Instalada 500kW</div>
+          </div>
         </div>
-      </div>
 
-      <div class="empresa">
-        <img src="./imag/log8.png" alt="Logo Sopral" class="logo-empresa" />
-        <div class="datos-empresa">
-          <p><strong>SOPRABAL S.A.</strong></p>
-          <div class="proyecto">Proyecto Eléctrico e Instrumentación, Inspección Técnica de Obras Up-grade Línea de Plumas y Mitigación de Olores Planta de Subproductos, La Calera<br />
-            Año 2013, Potencia Instalada 500kW</div>
+        <div class="empresa">
+          <img src="./imag/log8.png" alt="Logo Sopral" class="logo-empresa" />
+          <div class="datos-empresa">
+            <p><strong>SOPRABAL S.A.</strong></p>
+            <div class="proyecto">Proyecto Eléctrico e Instrumentación, Inspección Técnica de Obras Up-grade Línea de
+              Plumas y Mitigación de Olores Planta de Subproductos, La Calera<br />
+              Año 2013, Potencia Instalada 500kW</div>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
-<div class="collapsible-section experiencia-profesional" id="contacto">
-  <div class="collapsible-header" onclick="toggleSection('experiencia-contenido')">
-  <h3>CONTACTO</h3>
+  <div class="collapsible-section experiencia-profesional" id="contacto">
+    <div class="collapsible-header" onclick="toggleSection('experiencia-contenido')">
+      <h3>CONTACTO</h3>
+    </div>
   </div>
-</div>
-    <section class="contacto-seccion">
-      <div class="contacto-container">
-        <form class="formulario-contacto">
-          <label>Nombre</label>
-          <input type="text" placeholder="Tu nombre completo" required />
+  <section class="contacto-seccion">
+    <div class="contacto-container">
+      <form class="formulario-contacto">
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre completo" required />
 
-          <label>Correo</label>
-          <input type="email" placeholder="correo@ejemplo.com" required />
+        <label>Correo</label>
+        <input type="email" placeholder="correo@ejemplo.com" required />
 
-          <label>Asunto</label>
-          <input type="text" placeholder="Motivo de tu mensaje" />
+        <label>Asunto</label>
+        <input type="text" placeholder="Motivo de tu mensaje" />
 
-          <label>Mensaje</label>
-          <textarea rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <label>Mensaje</label>
+        <textarea rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
 
-          <button type="submit">Enviar Mensaje</button>
-        </form>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
 
-        <div class="info-contacto">
-          <h4>Información de Contacto</h4>
-          <p><strong>Teléfono:</strong> +56 9 140 7876</p>
-          <p><strong>Correo:</strong> <a href="mailto:ruben.escobar.ie@gmail.com">ruben.escobar.ie@gmail.com</a></p>
-          <p><strong>Dirección:</strong> Viña del Mar - Valparaíso</p>
-        </div>
+      <div class="info-contacto">
+        <h4>Información de Contacto</h4>
+        <p><strong>Teléfono:</strong> +569 91407876</p>
+        <p><strong>Correo:</strong> <a href="mailto:ruben.escobar.ie@gmail.com">ruben.escobar.ie@gmail.com</a></p>
+        <p><strong>Dirección:</strong> Viña del Mar - Valparaíso</p>
       </div>
-    </section>
-<a href="https://wa.me/+5691407876" class="whatsapp-float" target="_blank" title="Envíanos un mensaje por WhatsApp">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
-</a>
+    </div>
+  </section>
 
+
+
+  <a href="https://wa.me/+56991407876" class="whatsapp-float" target="_blank" title="Envíanos un mensaje por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
+  </a>
+
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menuNavegacion');
+    const isVisible = menu.style.display === 'flex';
+    menu.style.display = isVisible ? 'none' : 'flex';
+  }
+</script>
   <script src="script.js"></script>
-
-
