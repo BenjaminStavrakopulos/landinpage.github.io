@@ -890,6 +890,46 @@ body {
 }
 
 @media (max-width: 768px) {
+   body {
+    padding: 0 10px;
+  }
+
+  .titulo-presentacion,
+  .titulo-servicios,
+  .titulo-contacto,
+  .titulo-experiencia {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contenido-servicios,
+  .texto-acerca,
+  .caja-mision,
+  .proyecto,
+  .info-contacto {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .imagenes-certificados img,
+  .imagenes-servicios img,
+  .imagenes-certificacion img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .logo-empresa {
+    width: 80px;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 13px;
+  }
+
+  .collapsible-header h3 {
+    font-size: 16px;
+  }
   .contacto-container {
     flex-direction: column;
     padding: 20px;
